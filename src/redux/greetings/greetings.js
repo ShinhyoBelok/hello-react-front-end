@@ -15,11 +15,9 @@ const greetingSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getGreeting.fulfilled, (state, action) => {
-        state.message = action.payload;
-      });
+      .addCase(getGreeting.fulfilled, (state, action) => ({ ...state, message: action.payload }));
   },
 });
 
-export const { } = greetingSlice.actions;
+export const greetingActions = greetingSlice.actions;
 export default greetingSlice.reducer;

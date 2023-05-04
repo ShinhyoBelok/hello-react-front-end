@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Greeter from './components/Greeter'
+import Greeter from './components/Greeter';
 
 function App() {
   return (
